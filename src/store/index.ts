@@ -2,10 +2,12 @@ import { configureStore, combineReducers } from "@reduxjs/toolkit";
 import createSagaMiddleware from "@redux-saga/core";
 import rootSaga from "./sagas";
 import counterReducer from "./slices/counterSlice";
+import headerSlice from "./slices/toggleMenu";
 
 const sagaMiddleware = createSagaMiddleware();
 const reducer = combineReducers({
   counter: counterReducer,
+  header: headerSlice
 });
 
 const store = configureStore({

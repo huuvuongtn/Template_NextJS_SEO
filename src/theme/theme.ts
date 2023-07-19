@@ -26,6 +26,7 @@ const theme = createTheme({
       primary: "rgba(0,0,0,0.87)",
       secondary: "rgba(0,0,0,0.6)",
     },
+    // mode:'dark',
   },
   typography: {
     fontFamily: "'Roboto', 'Helvetica', 'Arial', sans-serif",
